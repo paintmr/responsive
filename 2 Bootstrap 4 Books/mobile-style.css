@@ -1,0 +1,95 @@
+@media screen and (max-width: 992px) {
+  .section-4 .card .card-title {
+    font-size: 2.5vmin;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-1 .row .col-md-6 .pray img {
+    display: none;
+  }
+
+  .section-1 .pray-desc {
+    position: relative;
+  }
+
+  .section-1 .pray-desc::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./assets/pexels-photo-1904769.jpeg) no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.1;
+  }
+
+  .section-1 .row .col-md-6 .panel p {
+    color: initial;
+  }
+
+  .section-1 .row .col-md-6 .panel {
+    position: initial;
+    width: initial;
+    height: initial;
+  }
+
+  .section-2 .cover {
+    background-position: -25vmin -10vmin;
+  }
+
+  .numbers .rect {
+    width: 10rem;
+    height: 8rem;
+  }
+
+  .numbers .rect h1 {
+    font-size: 2rem;
+  }
+
+  .section-3 {
+    height: inherit;
+    padding: 10vmin !important;
+  }
+
+  .section-3 .row h1 {
+    padding: 6vmin 4vmin;
+  }
+
+  .section-3 .row .col-md-6 {
+    text-align: center !important;
+  }
+
+  .section-3 .desktop i {
+    font-size: 8vmin;
+  }
+
+  .section-4 .team {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .section-4 .card .card-title {
+    font-size: 4vmin;
+  }
+  .section-4 .card .card-body > a {
+    font-size: 3.6vmin;
+  }
+
+  .section-4 carousel-inner {
+    width: 24rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .numbers {
+    margin-top: -10vmin;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .section-4 .card {
+    width: 18rem;
+  }
+}
