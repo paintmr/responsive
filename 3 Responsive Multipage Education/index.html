@@ -6,25 +6,227 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Education</title>
 
-    <!-- ICONSCOUT CDN -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <!-- ICONSCOUT CDN
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" /> -->
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/fad473a64e.js" crossorigin="anonymous"></script>
 
     <!-- My style.css -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <!-- Nav begins. -->
     <nav>
       <div class="container nav__container">
-        <a href="index.html"><h4>EGATOR</h4></a>
+        <a href="./index.html"><h4>EGATOR</h4></a>
         <ul class="nav__menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./courses.html">Courses</a></li>
+          <li><a href="./contact.html">Contact</a></li>
         </ul>
-        <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
-        <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+        <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
       </div>
     </nav>
+    <!-- Nav ends. -->
+
+    <!-- Header begins. -->
+    <header>
+      <div class="container header__container">
+        <div class="header__left">
+          <h1>Grow your skills to advance your career path.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora labore explicabo possimus at accusamus dolorum asperiores earum nam corporis aliquid.</p>
+          <a href="./courses.html" class="btn btn-primary">Get Started</a>
+        </div>
+        <div class="header__right">
+          <div class="header__right-image">
+            <img src="./images/header.svg" alt="header__right-image" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header ends. -->
+
+    <!-- Categories begins. -->
+    <section class="categories">
+      <div class="container categories__container">
+        <div class="categories__left">
+          <h1>Categories</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dicta, fugit incidunt harum laboriosam deleniti accusamus excepturi id assumenda molestias nihil, ullam, voluptatem quisquam aspernatur! Iure odio sunt unde iste!</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="categories__right">
+          <article class="category">
+            <span class="category__icon"><i class="fa-solid fa-bitcoin-sign"></i></span>
+            <h5>Blockchain</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, sit?</p>
+          </article>
+
+          <article class="category">
+            <span class="category__icon"><i class="fa-solid fa-palette"></i></span>
+            <h5>Graphic Design</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, sit?</p>
+          </article>
+
+          <article class="category">
+            <span class="category__icon"><i class="fa-solid fa-dollar-sign"></i></span>
+            <h5>Finance</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, sit?</p>
+          </article>
+
+          <article class="category">
+            <span class="category__icon"><i class="fa-solid fa-bullhorn"></i></span>
+            <h5>Marketing</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, sit?</p>
+          </article>
+
+          <article class="category">
+            <span class="category__icon"><i class="fa-solid fa-music"></i></span>
+            <h5>Music</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, sit?</p>
+          </article>
+
+          <article class="category">
+            <span class="category__icon"><i class="fa-solid fa-chart-line"></i></span>
+            <h5>Business</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, sit?</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- Categories ends. -->
+
+    <!-- Courses begins.  -->
+    <section class="courses">
+      <h2>Popular Courses</h2>
+      <div class="container courses__container">
+        <article class="course">
+          <div class="course__image">
+            <img src="./images/course1.jpg" alt="course1" />
+          </div>
+          <div class="course__info">
+            <h4>Responsive Social Media Website UI Design</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi laboriosam iure dolore fugiat placeat minima officiis!</p>
+            <a href="./courses.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </article>
+
+        <article class="course">
+          <div class="course__image">
+            <img src="./images/course2.jpg" alt="course2" />
+          </div>
+          <div class="course__info">
+            <h4>Responsive SmartHome Website Design</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi laboriosam iure dolore fugiat placeat minima officiis!</p>
+            <a href="./courses.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </article>
+
+        <article class="course">
+          <div class="course__image">
+            <img src="./images/course3.jpg" alt="course3" />
+          </div>
+          <div class="course__info">
+            <h4>Responsive Admin Dashboard UI Design</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi laboriosam iure dolore fugiat placeat minima officiis!</p>
+            <a href="./courses.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- Courses ends.  -->
+
+    <!-- Frequently-asked-questions begins.  -->
+    <section class="faqs">
+      <h2>Frequently Asked Questions</h2>
+      <div class="container faqs__container">
+        <article class="faq">
+          <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+          <div class="question__answer">
+            <h4>How do I know the right courses for me?</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum et explicabo commodi officiis ipsa veniam voluptatem, ex eius quas expedita ea sapiente, deserunt, debitis consectetur sunt molestias a ratione architecto!</p>
+          </div>
+        </article>
+
+        <article class="faq">
+          <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+          <div class="question__answer">
+            <h4>How do I know the right courses for me?</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum et explicabo commodi officiis ipsa veniam voluptatem, ex eius quas expedita ea sapiente, deserunt, debitis consectetur sunt molestias a ratione architecto!</p>
+          </div>
+        </article>
+
+        <article class="faq">
+          <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+          <div class="question__answer">
+            <h4>How do I know the right courses for me?</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum et explicabo commodi officiis ipsa veniam voluptatem, ex eius quas expedita ea sapiente, deserunt, debitis consectetur sunt molestias a ratione architecto!</p>
+          </div>
+        </article>
+
+        <article class="faq">
+          <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+          <div class="question__answer">
+            <h4>How do I know the right courses for me?</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum et explicabo commodi officiis ipsa veniam voluptatem, ex eius quas expedita ea sapiente, deserunt, debitis consectetur sunt molestias a ratione architecto!</p>
+          </div>
+        </article>
+
+        <article class="faq">
+          <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+          <div class="question__answer">
+            <h4>How do I know the right courses for me?</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum et explicabo commodi officiis ipsa veniam voluptatem, ex eius quas expedita ea sapiente, deserunt, debitis consectetur sunt molestias a ratione architecto!</p>
+          </div>
+        </article>
+
+        <article class="faq">
+          <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+          <div class="question__answer">
+            <h4>How do I know the right courses for me?</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum et explicabo commodi officiis ipsa veniam voluptatem, ex eius quas expedita ea sapiente, deserunt, debitis consectetur sunt molestias a ratione architecto!</p>
+          </div>
+        </article>
+
+        <article class="faq">
+          <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+          <div class="question__answer">
+            <h4>How do I know the right courses for me?</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum et explicabo commodi officiis ipsa veniam voluptatem, ex eius quas expedita ea sapiente, deserunt, debitis consectetur sunt molestias a ratione architecto!</p>
+          </div>
+        </article>
+
+        <article class="faq">
+          <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+          <div class="question__answer">
+            <h4>How do I know the right courses for me?</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum et explicabo commodi officiis ipsa veniam voluptatem, ex eius quas expedita ea sapiente, deserunt, debitis consectetur sunt molestias a ratione architecto!</p>
+          </div>
+        </article>
+
+        <article class="faq">
+          <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+          <div class="question__answer">
+            <h4>How do I know the right courses for me?</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum et explicabo commodi officiis ipsa veniam voluptatem, ex eius quas expedita ea sapiente, deserunt, debitis consectetur sunt molestias a ratione architecto!</p>
+          </div>
+        </article>
+
+        <article class="faq">
+          <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+          <div class="question__answer">
+            <h4>How do I know the right courses for me?</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum et explicabo commodi officiis ipsa veniam voluptatem, ex eius quas expedita ea sapiente, deserunt, debitis consectetur sunt molestias a ratione architecto!</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Frequently-asked-questions ends. -->
+
+    <!-- JavaScript -->
+    <script src="./main.js"></script>
   </body>
 </html>
