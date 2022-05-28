@@ -1,4 +1,4 @@
-/* Root-styles begins. */
+/* start of Root-styles */
 /* Google Fonts (MONTSERRAT) */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,800;1,700&display=swap");
 
@@ -108,13 +108,15 @@ img {
   color: var(--color-white);
 }
 
-/* Root-styles ends. */
+/* end of Root-styles */
 
-/* Navbar begins. */
+/* start of Navbar */
 
 nav {
   background: transparent;
-  width: 100vw;
+  /* width: 100vw; */
+  /* 宽度100vw和100%的区别：100vw还包括右边滚动条的宽度，而100%不包括。如果写100vw，在移动设备上，右上角的菜单/关闭按钮无法和其他section的右边对齐。 */
+  width: 100%;
   height: 5rem;
   position: fixed;
   top: 0;
@@ -152,9 +154,9 @@ nav button {
 .nav__menu a:hover {
   color: var(--color-bg2);
 }
-/* Navbar ends. */
+/* end of Navbar */
 
-/* Header begins. */
+/* start of Header */
 header {
   position: relative;
   top: 5rem;
@@ -175,9 +177,9 @@ header {
   margin: 1rem 0 2.4rem;
 }
 
-/* Header ends. */
+/* end of Header */
 
-/* Categories begins.  */
+/* start of Categories */
 .categories {
   background: var(--color-bg1);
   height: 32rem;
@@ -248,9 +250,9 @@ header {
   font-size: 0.85rem;
 }
 
-/* Categories ends.  */
+/* end of Categories */
 
-/* Courses begin.  */
+/* start of Courses */
 .courses {
   margin-top: 10rem;
 }
@@ -282,9 +284,9 @@ header {
   font-size: 0.9rem;
 }
 
-/* Courses ends. */
+/* end of Courses */
 
-/* Frequently-asked-questions begins. */
+/* start of Frequently-asked-questions */
 .faqs {
   background: var(--color-bg1);
   box-shadow: 0 0 3rem rgba(0, 0, 0, 0.5) inset;
@@ -324,9 +326,9 @@ header {
 .faq.open p {
   display: block;
 }
-/* Frequently-asked-questions ends. */
+/* end of Frequently-asked-questions */
 
-/* Testimonials begins.  */
+/* start of Testimonials */
 .testimonials__container {
   overflow-x: hidden;
   position: relative;
@@ -369,9 +371,9 @@ header {
   transform: rotate(45deg);
 }
 
-/* Testimonials ends.  */
+/* end of Testimonials  */
 
-/* Footer begins. */
+/* start of Footer */
 footer {
   background: var(--color-bg1);
   padding-top: 5rem;
@@ -413,4 +415,236 @@ footer ul li a:hover {
   padding: 1.2rem 0;
   border-top: 1px solid var(--color-bg2);
 }
-/* Footer ends. */
+/* end of Footer */
+
+/* start of Media Queries (Computers) */
+@media screen and (min-width: 1025px) {
+  nav button {
+    display: none !important;
+  }
+
+  .nav__menu {
+    display: flex !important;
+    align-items: center !important;
+    gap: 4rem !important;
+  }
+}
+/* end of Media Queries (Computers) */
+
+/* start of Media Queries (Tablets) */
+@media screen and (max-width: 1329px) and (min-width: 1025px) {
+  .categories {
+    height: 65vmin;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  /* start of Navbar (Tablets) */
+  nav button {
+    display: inline-block;
+    background: transparent;
+    font-size: 1.8rem;
+    color: var(--color-white);
+    cursor: pointer;
+  }
+
+  nav button#close-menu-btn {
+    display: none;
+  }
+
+  .nav__menu {
+    position: fixed;
+    top: 5rem;
+    right: 5%;
+    height: fit-content;
+    width: 18rem;
+    flex-direction: column;
+    gap: 0;
+    display: none;
+  }
+
+  .nav__menu li {
+    width: 100%;
+    height: 5.8rem;
+    animation: animateNavItems 200ms linear forwards;
+    transform-origin: top right;
+    opacity: 0;
+  }
+
+  .nav__menu li:nth-child(2) {
+    animation-delay: 200ms;
+  }
+
+  .nav__menu li:nth-child(3) {
+    animation-delay: 400ms;
+  }
+
+  .nav__menu li:nth-child(4) {
+    animation-delay: 600ms;
+  }
+
+  @keyframes animateNavItems {
+    0% {
+      transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+    }
+
+    100% {
+      transform: rotate(0) rotateX(0) scale(1);
+      opacity: 1;
+    }
+  }
+
+  .nav__menu li a {
+    background: var(--color-primary);
+    box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+
+  .nav__menu li a:hover {
+    background: var(--color-bg2);
+    color: var(--color-white);
+  }
+  /* end of Navbar (Tablets) */
+
+  /* start of header (Tablets) */
+  header {
+    height: 52vh;
+    margin-bottom: 4rem;
+  }
+
+  .header__container {
+    gap: 0;
+    padding-bottom: 3rem;
+  }
+  /* end of header (Tablets) */
+
+  /* start of categories (Tablets) */
+  .categories {
+    /* height: fit-content; */
+    /* 可以用上面的代码，也可以用下面的代码 */
+    height: auto;
+  }
+
+  .categories__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .categories__left {
+    margin-right: 0;
+  }
+  /* end of categories (Tablets) */
+
+  /* start of popular courses (Tablets) */
+  .courses {
+    margin-top: 0;
+  }
+
+  .courses__container {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* end of popular courses (Tablets) */
+
+  /* start of FAQs (Tablets) */
+  .faqs__container {
+    grid-template-columns: 1fr;
+  }
+
+  .faq {
+    padding: 1.5rem;
+  }
+  /* end of FAQs (Tablets) */
+
+  /* start of footer (Tablets) */
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* end of footer (Tablets) */
+}
+
+/* end of Media Queries (Tablets) */
+
+/* start of Media Queries (Mobile phones) */
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  .nav__menu {
+    right: 3%;
+  }
+
+  header {
+    height: 100vh;
+  }
+
+  .header__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .header__left p {
+    margin-bottom: 1.3rem;
+  }
+
+  .categories__right {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+  }
+
+  .category {
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  .category__icon {
+    margin-top: 4px;
+    display: inline-block;
+  }
+
+  .courses__container {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial__body {
+    padding: 1.2rem;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .footer__1 p {
+    margin: 1rem auto;
+  }
+
+  .footer__socials {
+    justify-content: center;
+  }
+}
+/* end of Media Queries (Mobile phones) */

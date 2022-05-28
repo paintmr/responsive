@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- Nav begins. -->
+    <!-- start of Nav -->
     <nav>
       <div class="container nav__container">
         <a href="./index.html"><h4>EGATOR</h4></a>
@@ -33,9 +33,9 @@
         <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
       </div>
     </nav>
-    <!-- Nav ends. -->
+    <!-- end of Nav -->
 
-    <!-- Header begins. -->
+    <!-- start of Header -->
     <header>
       <div class="container header__container">
         <div class="header__left">
@@ -50,9 +50,9 @@
         </div>
       </div>
     </header>
-    <!-- Header ends. -->
+    <!-- end of Header -->
 
-    <!-- Categories begins. -->
+    <!-- start of Categories -->
     <section class="categories">
       <div class="container categories__container">
         <div class="categories__left">
@@ -99,9 +99,9 @@
         </div>
       </div>
     </section>
-    <!-- Categories ends. -->
+    <!-- end of Categories -->
 
-    <!-- Courses begins.  -->
+    <!-- start of Courses  -->
     <section class="courses">
       <h2>Popular Courses</h2>
       <div class="container courses__container">
@@ -139,9 +139,9 @@
         </article>
       </div>
     </section>
-    <!-- Courses ends.  -->
+    <!-- end of Courses  -->
 
-    <!-- Frequently-asked-questions begins.  -->
+    <!-- start of Frequently-asked-questions  -->
     <section class="faqs">
       <h2>Frequently Asked Questions</h2>
       <div class="container faqs__container">
@@ -227,9 +227,9 @@
       </div>
     </section>
 
-    <!-- Frequently-asked-questions ends. -->
+    <!-- end of Frequently-asked-questions -->
 
-    <!-- Testimonials begins.  -->
+    <!-- start of Testimonials  -->
     <!-- SwiperJS的demo中类swiper和mySwiper写在一起的。不写swiper可以让pagination的点点在图片的外面的下面，否则在图片里面的下面。 -->
     <section class="container testimonials__container mySwiper">
       <h2>Students' Testimonials</h2>
@@ -301,9 +301,9 @@
       </div>
       <div class="swiper-pagination"></div>
     </section>
-    <!-- Testimonials ends.  -->
+    <!-- end of Testimonials -->
 
-    <!-- Footer begins.  -->
+    <!-- start of Footer  -->
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__1">
@@ -357,10 +357,29 @@
         <small>Copyright &copy; EGATOR</small>
       </div>
     </footer>
-    <!-- Footer ends.  -->
+    <!-- end of Footer -->
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        // when window width is >= 600px
+        breakpoints: {
+          600: {
+            slidesPerView: 2,
+          },
+        },
+      });
+    </script>
+
     <!-- JavaScript -->
     <script src="./main.js"></script>
   </body>
