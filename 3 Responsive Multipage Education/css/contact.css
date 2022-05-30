@@ -84,6 +84,10 @@ textarea {
   color: var(--color-white);
 }
 
+textarea {
+  resize: none;
+}
+
 .contact__form .btn {
   width: max-content;
   margin-top: 1rem;
