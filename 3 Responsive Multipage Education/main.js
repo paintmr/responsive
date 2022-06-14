@@ -38,3 +38,9 @@ closeBtn.addEventListener('click', () => {
   menuBtn.style.display = "inline-block";
 })
 
+// Reset the form after the user has clicked the 'Send Message' button.
+document.querySelector('#sd-msg').addEventListener('click', () => {
+  setTimeout(() => {
+    document.querySelector('#contact__form').reset();
+  })
+})
